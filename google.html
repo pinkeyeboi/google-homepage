@@ -1,34 +1,189 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Store</a>
-            </li>
-            <li>
-                <a href="#">Gmail</a>
-            </li>
-            <li>
-                <a href="#">Images</a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-user-circle"></i>
-                </a>
-            </li>
-        </ul>
+    <style>
+@media screen and (min-width:361px) {
+ .gb_k.gb_0a {
+  width:354px
+ }
+}
+@media screen and (max-width:361px) {
+ .gb_k.gb_0a {
+  width:calc(100vw -  12px *2)
+ }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    background-color: white;
     
-    </nav>
-<head>
-<h1></h1>
-<body>Google</body>
-</head>
+  }
+  
+  .left-nav {
+    float: left;
+  }
+  .right-nav{
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 13px 1px 0 2px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin: 0 2px 0 15px;
+    
+  }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: white;
+    text-decoration: underline;
+  }
+
+  .store{
+      padding-right: 5px;
+  }
+
+  .apps{
+      
+
+  }
+  .profile::after{
+    display: inline-block;
+    -webkit-animation-smoothing: antialised;
+    
+  }
+
+  .country{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 14px;
+    border-bottom-color: rgb(218, 200, 224);
+    background-color:#dadce0;
+    color: black
+    font-family: Arial;
+  }
+  .last{
+    background-color: #dadce0;
+  }
+  
+  body{
+      text-align: center;
+      min-width: 400px;
+      height: 100%;
+      margin: ;
+  }
+  .bottom{
+    text-decoration: none;
+  }
+
+  .searchbar{
+      border-radius: 5;
+   
+  }
+  .searchbar:hover{
+      -webkit-box-shadow: auto;
+      background-color: #fff;
+        box-shadow: auto rgba(32,33,36,.28);
+        border-color: rgba(223,225,229,0);
+  }
+  #language{
+      padding: 0 3px;
+      text-decoration: none;
+      font-size: small;
+      line-height: 28px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+  }
+  .language-link{
+      color: #1a0dab;
+  }
+  .language-link:hover{
+      text-decoration: ;
+  }
+    </style> 
+<head></head>  
+        <nav>
+            <ul>
+                <div class="left-nav">
+                    <li style= "float:left">
+                        <a href="#">About</a>
+                    </li>
+                    <li style= "float:left">
+                        <a href="#" class="store">Store</a>
+                    </li>
+                </div>
+                        <form action="">
+                            <li style="float:right">
+                                <a href="#"><button class="apps"><i class="fa">&#xf2bd;</i></button></a>
+                            </li>
+                            <li style="float:right">
+                                <a href="#"><button class="profile">button</button></a>
+                            </li>
+                        </form>
+                <div class="right-nav">
+                    <li style="float:right">
+                        <a href="#">Images</a>
+                    </li>
+                    <li style="float:right">
+                        <a href="#">Gmail</a>
+                    </li>
+                </div>
+            </ul>    
+        </nav>
+
+
+<body>
+    <h1>Google</h1>
+    <p class="searchbar">
+        <input type="text" style="width: 588px; height: 44px; outline: none;" class="form-control">
+            <center>
+                <input class="middle-bar" value="Google Search" type="submit">
+                <input id="first" value="I'm Feeling Lucky" type="submit">
+                    <div class="button" role="button" style="display: none; font-family: Arial, Helvetica, sans-serif; overflow: hidden; text-align: center; z-index: 50;">
+                        <div style="left: 0px; position: absolute; right: 0px; white-space: nowrap;">
+                            <div><span>I'm Feeling Curious</span></div>
+                            <div><span>I'm Feeling Hungry</span></div>
+                            <div><span>I'm Feeling Adventurous</span></div>
+                            <div><span>I'm Feeling Puzzled</span></div>
+                            <div><span>I'm Feeling Playful</span></div>
+                            <div><span>I'm Feeling Stellar</span></div>
+                            <div><span>I'm Feeling Generous</span></div>
+                            <div><span>I'm Feeling Doodley</span></div>
+                            <div><span>I'm Feeling Trendy</span></div>
+                            <div><span>I'm Feeling Artistic</span></div>
+                            <div><span>I'm Feeling Funny</span></div>
+                        </div>
+                    </div> 
+            </center>
+    </p>
+    <div id="language">Google offered in: <a href="#" class="language-link">Deutsch</a></div>
+
+</body>
+<footer>
+    <div class="bottom">
+        <a href="#"><div class="country" style="float:left">Germany</a></div><br>
+            <br><div class="last">
+                <br><a href="#"><div class="advertising" style="float:left">Advertising</a></div>
+                <a href="#">    <div class="business" style="float:left">Business</a></div>
+                <a href="#"><div class="how-search-works" style="float:left">How Search works</a></div>
+            </div>
+            <div>
+                <a href="#" class="settings" style="float:right">Settings</a>
+                <a href="#" class="terms" style="float:right">Terms</a>
+                <a href="#" class="privacy" style="float:right">Privacy</a>
+            </div>
+    </div>
+</footer>
+
 
 
 </html>
